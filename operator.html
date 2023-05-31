@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <script>
+        function add()
+        {
+            a=Number(document.getElementById("num1").value);
+            b=Number(document.getElementById("num2").value);
+            var res=a+b;
+            document.getElementById("result").value=res;
+        }
+        function sub()
+        {
+            a=document.getElementById("num1").value;
+            b=document.getElementById("num2").value;
+            var res=a-b;
+            document.getElementById("result").value=res;
+        }
+        function mul()
+        {
+            a=document.getElementById("num1").value;
+            b=document.getElementById("num2").value;
+            var res=a*b;
+            document.getElementById("result").value=res;
+        }
+        function div()
+        {
+            a=document.getElementById("num1").value;
+            b=document.getElementById("num2").value;
+            var res=a/b;
+            document.getElementById("result").value=res;
+        }
+    </script>
+    enter num1:<input type="text" id="num1"><br>
+    enter num2:<input type="text" id="num2"><br>
+    <button onclick="add()">"add"</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+    result:<input type="text"id="result">
+</html>
